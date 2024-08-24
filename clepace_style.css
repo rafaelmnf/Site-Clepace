@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.barra-de-cima h1{
+    margin: 0 0 0 45px;
+}
+
 /* Fonte principal do site (logo)*/
 .logo{
     font-family: 'satoshi', sans-serif;
@@ -14,27 +23,24 @@
     font-weight: normal;
 }
 
-/* Itens de navegacao do menu principal*/
-.nav {
-    color: black;
-    list-style-type: none; /* Remove os marcadores */
+.nav-topo-itens li {
     padding: 0;
     margin: 0;
-}
-.nav li {
+    color: black;
     display: inline;       /* Exibe os itens da lista na horizontal */
-    margin-right: 50px;    /* Espaçamento entre os itens */
+    margin-right: 50px;    /* Espaçamento entre os itens (p direita)*/
     font-family: "Roboto", sans-serif;
     font-size: 22px;
 }
-.nav li:hover{
-    color: #6600b9;
-    transition: 0.2s ease-in-out;
+
+#menu-topo{
+    list-style-type: none; /* Remove os marcadores */
+    margin-right:35px;
 }
 
-/* Só para ajustar a localização da box dos itens*/
-#itens-nav{
-    margin: 70px;
+.nav-topo-itens li:hover{
+    color: #6600b9;
+    transition: 0.2s ease-in-out;
 }
 
 /* remove todos os links visitados como marcados com cor diferente*/
@@ -42,15 +48,13 @@ a:visited {
     color: inherit; 
 }
 
-/* bg do menu principal do site*/
+/* box do menu principal do site*/
 .barra-de-cima{
     display: flex;
     justify-content: space-between;
     background-color: #9990FF;
     width: 100%;
     height: 80px;
-    padding: 5px 0px 0 45px;
-    margin: -10px;
     align-items: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
@@ -112,7 +116,7 @@ button[type="submit"]:hover {
 
 #bg-tela-inicial {
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
