@@ -1,0 +1,1 @@
+console.log(categorias[0].titulo)
